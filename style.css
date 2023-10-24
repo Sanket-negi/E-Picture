@@ -1,0 +1,220 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #100c0c;
+    color: #ede8e8;
+}
+
+header {
+     /* background-color: #fdf8f8;  */
+     background-color: #191919;
+    color: #b7b7b7;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #ded7d7;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Add this CSS to style the slideshow */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for navigation dots */
+.dot-container {
+    text-align: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #222;
+}
+.btn_one i{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition:all 0.3s linear ;
+ }
+
+.sidebar_menu{
+    position: fixed; 
+    left: -350px; 
+    height: 100vh;
+    width: 300px;
+    transition:all 0.3s linear ;
+} 
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: (0 0 4px rgba(160, 147, 147, 0.1));
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: aliceblue;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.sidebar_menu .btn_two i{
+    color: rgb(79, 77, 77);
+    font-size: 20px;
+    position: absolute;
+    left: 275px;
+    line-height: 70px;
+     /* opacity: 0;  */
+    cursor: pointer;
+    transition:all 0.3s linear ;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li{
+    padding: 14px 20px;
+    margin: 6px;
+}
+.sidebar_menu .menu a,i{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+    padding-right: 4px ;
+}
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 30px;
+}
+.sidebar_menu .social_media i{
+    color: aliceblue;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+ #check{
+    display: none;
+}
+.menu li:hover{
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+}
+.btn_one i:hover{
+    font-size: 30px;
+}
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
